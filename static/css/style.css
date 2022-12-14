@@ -1,0 +1,339 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Hind+Madurai:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+* body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #100F0F !important;
+}
+
+* body .paragraph-font {
+  font-family: "Hind Madurai", sans-serif;
+  color: #ffffff;
+}
+
+* body .title-font-white {
+  font-family: "Della Respira", serif;
+  color: #ffffff !important;
+}
+
+* body nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+* body nav #navTitle {
+  color: #ffffff;
+}
+
+* body nav .ancorsLink {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+* body nav #ancor {
+  text-decoration: none;
+  text-anchor: middle;
+  padding: 0 2% 3% 2%;
+  font-size: 1, 5rem;
+  color: #fff;
+  border-bottom: solid 2px transparent;
+}
+
+* body nav #ancor:hover {
+  border-bottom: solid 2px #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger .line {
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px;
+  background-color: #fff;
+}
+
+/* fim do nav */
+
+* body .section-01 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url(https://miro.medium.com/max/1000/1*Q5_t-R0xRs07wW1Kf8rCSw.gif);
+  background-size: cover;
+  opacity: 1;
+
+  box-shadow: inset 1px 1px 1000px 250px #100F0F;
+}
+.section-01 > .about-container {
+  margin-top: 7rem;
+  
+  
+
+}
+.section-01 > .about-container h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding-bottom: 5px;
+}
+
+* body .section-01 .image-container {
+  max-width: 25%;
+  
+}
+
+* body .section-01 .image-container img {
+  width: 55%;
+  border-radius: 40%;
+  border: 1px solid #0F3D3E;
+}
+
+* body .section-02 {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+* body .section-02 .category {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+* body .section-02 .category .category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  padding: 50px;
+  border: solid 2px transparent;
+}
+
+* body .section-02 .category .category-card:hover {
+  border: solid 2px #fff;
+  transform: scale(1.05);
+}
+
+* body .section-02 .category .category-card .bi {
+  font-size: 2rem;
+  height: 3rem;
+  color: #fff;
+}
+
+* body .section-03 {
+  margin: 50px 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-03 h1 {
+  color: #fff;
+}
+
+* body .section-03 .CardsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+* body .section-03 .CardsContainer .cards {
+  width: 500px;
+  margin: 1%;
+  padding: 2% 0 2% 0;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: #0F3D3E solid 5px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+* body .section-03 .CardsContainer .cards .projectImg {
+  width: 500px;
+  border: #0F3D3E solid 5px;
+}
+
+.title-font {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+* body .section-03 .CardsContainer .cards .description {
+  width: 350px;
+  text-align: center;
+  margin-top: 2%;
+  color: #fff;
+}
+
+* body .section-03 .CardsContainer .cards:hover {
+  transform: scale(1.05);
+}
+
+* body .footer-container-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  background-color: #0F3D3E;
+}
+
+* body .footer-container-01 h3 {
+  color: #fff;
+}
+
+* body .footer-container-01 p {
+  color: #fff;
+  margin: 1%;
+}
+
+* body .footer-container-01 .contacts {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* body .footer-container-01 .contacts a {
+  margin: 0 2% 0 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.made-by {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* body .footer-container-01 .contacts a:hover {
+  color: #B0B5B4;
+}
+.fa-python, .fa-solid, .fa-brands{
+  font-size: 2rem;
+  height: 3rem;
+  color: #fff;
+}
+
+
+.download {
+  text-decoration: none;
+  color: #0F3D3E;
+  font-weight: bold;
+  background-color: #E2DCC8;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+@media (max-width:768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .ancorsLink {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    top: -350%;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    transition:  .2s ;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .ancorsLink:hover{
+    transform: scale(1.2);
+  }
+
+  .ancorsLink.active {
+    width: 100%;
+    top: 100%;
+  }
+}
+
+@media (max-width:660px) {
+  .about-container {
+    width: 50%;
+  }
+}
+
+@media (max-width:490px) {
+  #navTitle {
+    font-size: 1rem;
+  }
+
+  .ancorsLink {
+    flex-wrap: wrap;
+  }
+
+  .about-container {
+    width: 30%;
+  }
+
+  .category {
+    width: 80%;
+  }
+
+  .cards {
+    width: 80% !important;
+  }
+
+  .projectImg {
+    width: 100% !important;
+  }
+}
